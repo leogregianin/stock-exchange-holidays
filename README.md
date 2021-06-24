@@ -18,28 +18,29 @@ without dependencies
 
 ### New York Stock Exchange (NYSE)
 ```python
-from stock_exchange_holidays import NYSE
+from stock_exchange_holidays import Holidays, NYSE
 
-calendar = NYSE()
-calendar.get_holidays()
-calendar.get_holidays_by_year(year=2021)
+holidays = Holidays(exchange=NYSE())
+print(holidays.get_holidays())
+print(holidays.get_holidays_by_year(year=2021))
 ```
 
 ### Chicago Mercantile Exchange (CME)
 ```python
-from stock_exchange_holidays import CME
+from stock_exchange_holidays import Holidays, CME
 
-calendar = CME()
-calendar.get_holidays()
-calendar.get_holidays_by_year(year=2021)
+holidays = Holidays(exchange=CME())
+print(holidays.get_holidays())
+print(holidays.get_holidays_by_year(year=2021))
 ```
 
 ### Sao Paulo Stock exchange (B3) formerly BM&F-BOVESPA
 ```python
-from stock_exchange_holidays import B3
-calendar = B3()
-calendar.get_holidays()
-calendar.get_holidays_by_year(year=2021)
+from stock_exchange_holidays import Holidays, B3
+
+holidays = Holidays(exchange=B3())
+print(holidays.get_holidays())
+print(holidays.get_holidays_by_year(year=2021))
 ```
 
 

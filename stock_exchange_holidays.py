@@ -52,19 +52,6 @@ class NYSE:
         (date(2023, 12, 25), 'Christmas Day'),
     )
 
-    def get_holidays(self):
-        return self.HOLIDAYS
-
-    def get_holidays_by_year(self, year):
-        days = []
-        for date_holiday, label in self.HOLIDAYS:
-            if date_holiday.year == year:
-                days.append((
-                    date(year, date_holiday.month, date_holiday.day),
-                    label
-                ))
-        return days
-
 
 class CME:
     """
@@ -94,19 +81,6 @@ class CME:
         (date(2021, 11, 25), 'Thanksgiving Day'),
         (date(2021, 12, 25), 'Christmas Day'),
     )
-
-    def get_holidays(self):
-        return self.HOLIDAYS
-
-    def get_holidays_by_year(self, year):
-        days = []
-        for date_holiday, label in self.HOLIDAYS:
-            if date_holiday.year == year:
-                days.append((
-                    date(year, date_holiday.month, date_holiday.day),
-                    label
-                ))
-        return days
 
 
 class B3:
@@ -164,12 +138,21 @@ class B3:
         (date(2022, 12, 31), 'Last day of year')
     )
 
+
+class Holidays:
+    """
+    Holidays methods
+
+    """
+    def __init__(self, exchange=None):
+        self.stock_exchange = exchange
+
     def get_holidays(self):
-        return self.HOLIDAYS
+        return self.stock_exchange.HOLIDAYS
 
     def get_holidays_by_year(self, year):
         days = []
-        for date_holiday, label in self.HOLIDAYS:
+        for date_holiday, label in self.stock_exchange.HOLIDAYS:
             if date_holiday.year == year:
                 days.append((
                     date(year, date_holiday.month, date_holiday.day),
