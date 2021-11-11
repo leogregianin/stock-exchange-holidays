@@ -1,6 +1,13 @@
 # Worldwide Stock Exchange holidays
 
 
+## Install in Production
+
+```sh
+$ pip3 install https://github.com/leogregianin/stock-exchange-holidays/archive/main.zip
+```
+
+
 ## Development
 
 ### Create virtual environment
@@ -9,11 +16,6 @@
 $ virtualenv .venv
 $ source .venv/bin/activate
 ```
-
-### Install Dependencies
-    
-without dependencies
-
 
 ### Install development dependencies
     
