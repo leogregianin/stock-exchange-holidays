@@ -21,6 +21,13 @@ without dependencies
 $ pip install -r requirements-dev.txt
 ```
 
+### Run tests
+    
+```sh
+$ coverage run -m unittest && coverage report -m
+```
+
+
 ## Using
 
 ### New York Stock Exchange (NYSE)
@@ -32,6 +39,17 @@ print(holidays.get_holidays())
 print(holidays.get_holidays_by_year(year=2021))
 ```
 
+##### Is specific date holiday in NYSE?
+
+```python
+from datetime import date
+from stock_exchange_holidays import Holidays, NYSE
+
+first_day = date(2020, 1, 1)
+holidays = Holidays(exchange=NYSE())
+holidays.is_date_holiday(first_day)
+```
+
 ### Chicago Mercantile Exchange (CME)
 ```python
 from stock_exchange_holidays import Holidays, CME
@@ -41,6 +59,18 @@ print(holidays.get_holidays())
 print(holidays.get_holidays_by_year(year=2021))
 ```
 
+##### Is specific date holiday in CME?
+
+```python
+from datetime import date
+from stock_exchange_holidays import Holidays, CME
+
+first_day = date(2020, 1, 1)
+holidays = Holidays(exchange=CME())
+holidays.is_date_holiday(first_day)
+```
+
+
 ### Sao Paulo Stock exchange (B3) formerly BM&F-BOVESPA
 ```python
 from stock_exchange_holidays import Holidays, B3
@@ -48,6 +78,17 @@ from stock_exchange_holidays import Holidays, B3
 holidays = Holidays(exchange=B3())
 print(holidays.get_holidays())
 print(holidays.get_holidays_by_year(year=2021))
+```
+
+##### Is specific date holiday in B3?
+
+```python
+from datetime import date
+from stock_exchange_holidays import Holidays, B3
+
+first_day = date(2020, 1, 1)
+holidays = Holidays(exchange=B3())
+holidays.is_date_holiday(first_day)
 ```
 
 
