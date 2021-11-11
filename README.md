@@ -1,5 +1,8 @@
 # Worldwide Stock Exchange holidays
 
+[![stock-exchange-holidays](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml/badge.svg)](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/leogregianin/stock-exchange-holidays/branch/main/graph/badge.svg)](https://codecov.io/gh/leogregianin/stock-exchange-holidays)
+
 
 ## Install in Production
 
