@@ -11,12 +11,12 @@ class TestNYSE(TestCase):
         self.nyse_holidays = self.holidays.get_holidays()
 
     def test_nyse_first_day_year_is_holiday(self):
-        first_day = date(2020, 1, 1)
-        self.assertTrue(holiday for holiday in self.nyse_holidays if holiday == first_day)
+        get_date = date(2020, 1, 1)
+        self.assertTrue(self.holidays.is_date_holiday(get_date))
 
     def test_nyse_random_date_is_not_holiday(self):
-        january_random_day = date(2020, 1, 10)
-        self.assertFalse(january_random_day in self.nyse_holidays)
+        get_date = date(2020, 1, 10)
+        self.assertFalse(self.holidays.is_date_holiday(get_date))
 
     def test_nyse_holidays_2020(self):
         year = 2020
@@ -46,12 +46,12 @@ class TestCME(TestCase):
         self.cme_holidays = self.holidays.get_holidays()
 
     def test_cme_first_day_year_is_holiday(self):
-        first_day = date(2020, 1, 1)
-        self.assertTrue(holiday for holiday in self.cme_holidays if holiday == first_day)
+        get_date = date(2020, 1, 1)
+        self.assertTrue(self.holidays.is_date_holiday(get_date))
 
     def test_cme_random_date_is_not_holiday(self):
-        january_random_day = date(2020, 1, 10)
-        self.assertFalse(january_random_day in self.cme_holidays)
+        get_date = date(2020, 1, 10)
+        self.assertFalse(self.holidays.is_date_holiday(get_date))
 
     def test_cme_holidays_2020(self):
         year = 2020
@@ -71,12 +71,12 @@ class TestB3(TestCase):
         self.b3_holidays = self.holidays.get_holidays()
 
     def test_b3_first_day_year_is_holiday(self):
-        first_day = date(2020, 1, 1)
-        self.assertTrue(holiday for holiday in self.b3_holidays if holiday == first_day)
+        get_date = date(2020, 1, 1)
+        self.assertTrue(self.holidays.is_date_holiday(get_date))
 
     def test_b3_random_date_is_not_holiday(self):
-        january_random_day = date(2020, 1, 10)
-        self.assertFalse(january_random_day in self.b3_holidays)
+        get_date = date(2020, 1, 10)
+        self.assertFalse(self.holidays.is_date_holiday(get_date))
 
     def test_b3_holidays_2020(self):
         year = 2020

@@ -159,3 +159,9 @@ class Holidays:
                     label
                 ))
         return days
+
+    def is_date_holiday(self, date):
+        for holiday in self.stock_exchange.HOLIDAYS:
+            if holiday[0] == date:
+                return True
+        return False
