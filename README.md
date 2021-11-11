@@ -14,6 +14,13 @@ $ source .venv/bin/activate
     
 without dependencies
 
+
+### Install development dependencies
+    
+```sh
+$ pip install -r requirements-dev.txt
+```
+
 ## Using
 
 ### New York Stock Exchange (NYSE)
