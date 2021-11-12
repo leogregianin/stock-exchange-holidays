@@ -19,5 +19,9 @@ jobs:
 
     - name: Run tests and coverage
       run: |
-        python -m coverage run -m unittest && python -m coverage report -m
+        make lint
+
+    - name: Run tests and coverage
+      run: |
+        make test
         codecov
