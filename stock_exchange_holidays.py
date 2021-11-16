@@ -81,6 +81,17 @@ class CME:
         (date(2021, 11, 25), 'Thanksgiving Day'),
         (date(2021, 12, 25), 'Christmas Day'),
     )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2022, 1, 1), 'New year'),
+        (date(2022, 1, 17), 'Martin Luther King, Jr. Day'),
+        (date(2022, 2, 21), "Washington's Birthday"),
+        (date(2022, 4, 15), 'Good Friday'),
+        (date(2022, 5, 30), 'Memorial Day'),
+        (date(2022, 7, 4), 'Independence Day'),
+        (date(2022, 9, 5), 'Labor Day'),
+        (date(2022, 11, 24), 'Thanksgiving Day'),
+        (date(2022, 12, 25), 'Christmas Day'),
+    )
 
 
 class B3:
