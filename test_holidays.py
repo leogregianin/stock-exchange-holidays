@@ -14,6 +14,10 @@ class TestNYSE(TestCase):
         get_date = date(2020, 1, 1)
         self.assertTrue(self.holidays.is_date_holiday(get_date))
 
+    def test_nyse_independence_day_is_holiday(self):
+        get_date = date(2022, 7, 4)
+        self.assertTrue(self.holidays.is_date_holiday(get_date))
+
     def test_nyse_random_date_is_not_holiday(self):
         get_date = date(2020, 1, 10)
         self.assertFalse(self.holidays.is_date_holiday(get_date))
@@ -49,6 +53,10 @@ class TestCME(TestCase):
         get_date = date(2020, 1, 1)
         self.assertTrue(self.holidays.is_date_holiday(get_date))
 
+    def test_cme_independence_day_is_holiday(self):
+        get_date = date(2022, 7, 4)
+        self.assertTrue(self.holidays.is_date_holiday(get_date))
+
     def test_cme_random_date_is_not_holiday(self):
         get_date = date(2020, 1, 10)
         self.assertFalse(self.holidays.is_date_holiday(get_date))
@@ -60,6 +68,11 @@ class TestCME(TestCase):
 
     def test_cme_holidays_2021(self):
         year = 2021
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 9)
+
+    def test_cme_holidays_2022(self):
+        year = 2022
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 9)
 
