@@ -5,10 +5,15 @@
 
 ## Install
 
+From source:
 ```sh
 $ python setup.py install
 ```
 
+From PyPi:
+```sh
+$ pip install stock-exchange-holidays
+```
 
 ## Development
 
