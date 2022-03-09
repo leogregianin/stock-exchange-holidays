@@ -2,7 +2,6 @@
 from setuptools import setup, find_packages
 
 
-
 __description__ = "Worldwide Stock Exchange holidays (NYSE, CME, B3 and others)"
 with open("README.md", "r") as fh:
     __long_description__ = fh.read()
