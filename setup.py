@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='stock_exchange_holidays',
-    version='0.1.0',
+    version='0.1.1',
     author='Leonardo Gregianin',
     author_email='leogregianin@gmail.com',
     description=__description__,
