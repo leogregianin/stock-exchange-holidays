@@ -1,5 +1,5 @@
 [run]
-omit = **__init__.py, **test*.py
+omit = **__init__.py
 
 [report]
 show_missing = false

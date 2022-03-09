@@ -1,7 +1,7 @@
 from datetime import date
 from unittest import TestCase
 
-from stock_exchange_holidays import Holidays, NYSE, CME, B3
+from stock.stock_exchange_holidays import Holidays, NYSE, CME, B3
 
 
 class TestNYSE(TestCase):

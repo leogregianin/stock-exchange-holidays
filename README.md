@@ -1,13 +1,12 @@
 # Worldwide Stock Exchange holidays
 
-[![stock-exchange-holidays](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml/badge.svg)](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/leogregianin/stock-exchange-holidays/branch/main/graph/badge.svg)](https://codecov.io/gh/leogregianin/stock-exchange-holidays)
+[![PyPI](https://img.shields.io/pypi/v/stock_exchange_holidays)](https://pypi.org/project/stock_exchange_holidays/)[![stock-exchange-holidays](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml/badge.svg)](https://github.com/leogregianin/stock-exchange-holidays/actions/workflows/main.yml)[![codecov](https://codecov.io/gh/leogregianin/stock-exchange-holidays/branch/main/graph/badge.svg)](https://codecov.io/gh/leogregianin/stock-exchange-holidays)
 
 
-## Install in Production
+## Install
 
 ```sh
-$ pip3 install https://github.com/leogregianin/stock-exchange-holidays/archive/main.zip
+$ python setup.py install
 ```
 
 
@@ -29,7 +28,7 @@ $ pip install -r requirements-dev.txt
 ### Run tests
     
 ```sh
-$ coverage run -m unittest && coverage report -m
+$ python -m unittest
 ```
 
 
@@ -37,7 +36,7 @@ $ coverage run -m unittest && coverage report -m
 
 ### New York Stock Exchange (NYSE)
 ```python
-from stock_exchange_holidays import Holidays, NYSE
+from stock.stock_exchange_holidays import Holidays, NYSE
 
 holidays = Holidays(exchange=NYSE())
 print(holidays.get_holidays())
@@ -48,7 +47,7 @@ print(holidays.get_holidays_by_year(year=2021))
 
 ```python
 from datetime import date
-from stock_exchange_holidays import Holidays, NYSE
+from stock.stock_exchange_holidays import Holidays, NYSE
 
 first_day = date(2020, 1, 1)
 holidays = Holidays(exchange=NYSE())
@@ -57,7 +56,7 @@ holidays.is_date_holiday(first_day)
 
 ### Chicago Mercantile Exchange (CME)
 ```python
-from stock_exchange_holidays import Holidays, CME
+from stock.stock_exchange_holidays import Holidays, CME
 
 holidays = Holidays(exchange=CME())
 print(holidays.get_holidays())
@@ -68,7 +67,7 @@ print(holidays.get_holidays_by_year(year=2021))
 
 ```python
 from datetime import date
-from stock_exchange_holidays import Holidays, CME
+from stock.stock_exchange_holidays import Holidays, CME
 
 first_day = date(2020, 1, 1)
 holidays = Holidays(exchange=CME())
@@ -78,7 +77,7 @@ holidays.is_date_holiday(first_day)
 
 ### Sao Paulo Stock exchange (B3) formerly BM&F-BOVESPA
 ```python
-from stock_exchange_holidays import Holidays, B3
+from stock.stock_exchange_holidays import Holidays, B3
 
 holidays = Holidays(exchange=B3())
 print(holidays.get_holidays())
@@ -89,7 +88,7 @@ print(holidays.get_holidays_by_year(year=2021))
 
 ```python
 from datetime import date
-from stock_exchange_holidays import Holidays, B3
+from stock.stock_exchange_holidays import Holidays, B3
 
 first_day = date(2020, 1, 1)
 holidays = Holidays(exchange=B3())
