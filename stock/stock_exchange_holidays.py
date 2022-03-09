@@ -17,6 +17,7 @@ class NYSE:
         (date(2020, 9, 7), 'Labor Day'),
         (date(2020, 11, 26), 'Thanksgiving Day'),
         (date(2020, 12, 25), 'Christmas Day'),
+        (date(2020, 12, 31), 'Last day of year')
     )
     HOLIDAYS = HOLIDAYS + (
         (date(2021, 1, 1), 'New year'),
@@ -28,6 +29,7 @@ class NYSE:
         (date(2021, 9, 6), 'Labor Day'),
         (date(2021, 11, 25), 'Thanksgiving Day'),
         (date(2021, 12, 25), 'Christmas Day'),
+        (date(2021, 12, 31), 'Last day of year')
     )
     HOLIDAYS = HOLIDAYS + (
         (date(2022, 1, 1), 'New year'),
@@ -35,10 +37,12 @@ class NYSE:
         (date(2022, 2, 21), "Washington's Birthday"),
         (date(2022, 4, 15), 'Good Friday'),
         (date(2022, 5, 30), 'Memorial Day'),
+        (date(2022, 6, 20), 'Juneteenth National Independence Day'),
         (date(2022, 7, 4), 'Independence Day'),
         (date(2022, 9, 5), 'Labor Day'),
         (date(2022, 11, 24), 'Thanksgiving Day'),
         (date(2022, 12, 25), 'Christmas Day'),
+        (date(2022, 12, 31), 'Last day of year')
     )
     HOLIDAYS = HOLIDAYS + (
         (date(2023, 1, 1), 'New year'),
@@ -46,10 +50,25 @@ class NYSE:
         (date(2023, 2, 20), "Washington's Birthday"),
         (date(2023, 4, 7), 'Good Friday'),
         (date(2023, 5, 29), 'Memorial Day'),
+        (date(2023, 6, 19), 'Juneteenth National Independence Day'),
         (date(2023, 7, 4), 'Independence Day'),
         (date(2023, 9, 4), 'Labor Day'),
         (date(2023, 11, 23), 'Thanksgiving Day'),
         (date(2023, 12, 25), 'Christmas Day'),
+        (date(2023, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2024, 1, 1), 'New year'),
+        (date(2024, 1, 15), 'Martin Luther King, Jr. Day'),
+        (date(2024, 2, 19), "Washington's Birthday"),
+        (date(2024, 3, 29), 'Good Friday'),
+        (date(2024, 5, 27), 'Memorial Day'),
+        (date(2024, 6, 19), 'Juneteenth National Independence Day'),
+        (date(2024, 7, 4), 'Independence Day'),
+        (date(2024, 9, 2), 'Labor Day'),
+        (date(2024, 11, 28), 'Thanksgiving Day'),
+        (date(2024, 12, 25), 'Christmas Day'),
+        (date(2024, 12, 31), 'Last day of year')
     )
 
 
@@ -69,6 +88,7 @@ class CME:
         (date(2020, 9, 7), 'Labor Day'),
         (date(2020, 11, 26), 'Thanksgiving Day'),
         (date(2020, 12, 25), 'Christmas Day'),
+        (date(2020, 12, 31), 'Last day of year')
     )
     HOLIDAYS = HOLIDAYS + (
         (date(2021, 1, 1), 'New year'),
@@ -80,6 +100,7 @@ class CME:
         (date(2021, 9, 6), 'Labor Day'),
         (date(2021, 11, 25), 'Thanksgiving Day'),
         (date(2021, 12, 25), 'Christmas Day'),
+        (date(2021, 12, 31), 'Last day of year')
     )
     HOLIDAYS = HOLIDAYS + (
         (date(2022, 1, 1), 'New year'),
@@ -87,10 +108,12 @@ class CME:
         (date(2022, 2, 21), "Washington's Birthday"),
         (date(2022, 4, 15), 'Good Friday'),
         (date(2022, 5, 30), 'Memorial Day'),
+        (date(2022, 6, 20), 'Juneteenth National Independence Day'),
         (date(2022, 7, 4), 'Independence Day'),
         (date(2022, 9, 5), 'Labor Day'),
         (date(2022, 11, 24), 'Thanksgiving Day'),
         (date(2022, 12, 25), 'Christmas Day'),
+        (date(2022, 12, 31), 'Last day of year')
     )
 
 
