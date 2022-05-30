@@ -166,6 +166,11 @@ class TestCME(TestCase):
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 11)
 
+    def test_cme_holidays_2023(self):
+        year = 2023
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 11)
+
 
 class TestB3(TestCase):
 
@@ -248,5 +253,10 @@ class TestB3(TestCase):
 
     def test_b3_holidays_2022(self):
         year = 2022
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 13)
+
+    def test_b3_holidays_2023(self):
+        year = 2023
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 13)

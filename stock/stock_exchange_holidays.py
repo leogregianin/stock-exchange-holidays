@@ -115,6 +115,19 @@ class CME:
         (date(2022, 12, 25), 'Christmas Day'),
         (date(2022, 12, 31), 'Last day of year')
     )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2023, 1, 1), 'New year'),
+        (date(2023, 1, 16), 'Martin Luther King, Jr. Day'),
+        (date(2023, 2, 20), "Washington's Birthday"),
+        (date(2023, 4, 7), 'Good Friday'),
+        (date(2023, 5, 29), 'Memorial Day'),
+        (date(2023, 6, 19), 'Juneteenth National Independence Day'),
+        (date(2023, 7, 4), 'Independence Day'),
+        (date(2023, 9, 4), 'Labor Day'),
+        (date(2023, 11, 23), 'Thanksgiving Day'),
+        (date(2023, 12, 25), 'Christmas Day'),
+        (date(2023, 12, 31), 'Last day of year')
+    )
 
 
 class B3:
@@ -170,6 +183,21 @@ class B3:
         (date(2022, 11, 15), 'Republic Day'),
         (date(2022, 12, 25), 'Christmas Day'),
         (date(2022, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2023, 1, 1), 'New year'),
+        (date(2023, 2, 21), 'Carnaval Monday'),
+        (date(2023, 2, 22), 'Carnaval'),
+        (date(2023, 4, 7), 'Good Friday'),
+        (date(2023, 4, 21), "Tiradentes' Day"),
+        (date(2023, 5, 1), 'Labour Day'),
+        (date(2023, 6, 8), 'Corpus Christi'),
+        (date(2023, 9, 7), 'Independence Day'),
+        (date(2023, 10, 12), 'Our Lady of Aparecida'),
+        (date(2023, 11, 2), "All Souls' Day"),
+        (date(2023, 11, 15), 'Republic Day'),
+        (date(2023, 12, 25), 'Christmas Day'),
+        (date(2023, 12, 31), 'Last day of year')
     )
 
 
